@@ -8,6 +8,7 @@
   --background-button-section: #f5f4fa;
   --text-color-on-hover-bg: #ffffff;
   --hero-btn-hover: #188ce8;
+  --socials-team-logo: #afb1b8;
 }
 
 h1,
@@ -323,10 +324,47 @@ a.current {
 }
 
 .list-profession {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.team-socials {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.item-team-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.item-team-socials:not(:last-child) {
+  margin-right: 10px;
+}
+
+.item-team-socials:hover,
+.item-team-socials:hover .team-logo {
+  fill: var(--text-color-on-hover-bg);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.team-socials-link {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.team-logo {
+  fill: var(--socials-team-logo);
 }
 
 /* Clients */
@@ -363,6 +401,21 @@ a.current {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
   cursor: pointer;
+}
+
+.clients-item:hover .clients-logo,
+.clients-item:focus {
+  fill: var(--accent-color);
+}
+
+.clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-logo {
+  fill: var(--socials-team-logo);
 }
 
 /* Footer */
@@ -440,10 +493,32 @@ a.current {
 }
 
 .socials-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials-item:hover {
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.socials-link {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.footer-socials-logo {
+  fill: var(--text-color-on-hover-bg);
 }
 
 /* ---------------------------Page - Portfolio */
